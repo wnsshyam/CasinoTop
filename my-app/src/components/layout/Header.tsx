@@ -9,7 +9,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-[#fff] border-b relative">
+    <header className="bg-[#fff] border-b border-[#E5E7E8] relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
         {/* Logo */}
@@ -24,7 +24,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10 text-[16px] leading-[24px] font-medium text-gray-700">
+        <nav className="hidden md:flex items-center gap-10 text-[16px] leading-[24px] font-medium text-black">
           <a
             href="#"
             className="hover:text-black transition-colors duration-200"

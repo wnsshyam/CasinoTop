@@ -3,3 +3,7 @@
 :root {
   --font-sans: var(--font-inter);
 }
+
+body {
+  font-family: var(--font-inter);
+}
