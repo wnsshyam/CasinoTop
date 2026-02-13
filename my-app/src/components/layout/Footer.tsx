@@ -1,12 +1,13 @@
 "use client";
 
 import CountryDropdown from "../CountryDropdown";
+import { Bot, ArrowRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f5f5f5] border-t mt-20">
+    <footer className="bg-[#f5f5f5] border-t border-[#E5E7E8] mt-20">
       <div className="max-w-7xl mx-auto px-6 py-14 text-[14px] leading-[24px] font-medium text-gray-700">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className=" grid grid-cols-1 md:grid-cols-4 md:grid-cols-[1fr_1fr_1fr_2fr]  gap-10">
           {/* Column 1 */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -70,18 +71,24 @@ export default function Footer() {
           </div>
 
           {/* Column 4 */}
-          <div className="border border-red-400 rounded-xl p-6 bg-white">
-            <div className="flex items-start gap-3">
-              <div className="text-red-500 text-xl">🤖</div>
+          <div className="w-full max-w-none border border-red-400 bg-red-50 rounded-2xl p-5">
+            <div className="flex flex-col gap-3">
+              {/* Icon */}
+              <div className="mt-1 text-gray-800">
+                <img src="/icons/bot.png" className="w-6 h-6" />
+              </div>
+
+              {/* Content */}
               <div>
-                <p className="text-gray-700 mb-3 font-normal">
+                <p className="text-gray-800 text-[14px] leading-[22px] mb-4 font-normal">
                   Some sections of this page were generated with the help of AI
                   tools, reviewed and verified by our editorial team.
                 </p>
 
-                <p className="text-red-500 font-medium cursor-pointer hover:underline">
-                  Read Full Review →
-                </p>
+                <div className="flex items-center gap-2 text-red-500 text-[14px] font-medium cursor-pointer hover:opacity-80 transition">
+                  Read Full Review
+                  <ArrowRight className="w-4 h-4" />
+                </div>
               </div>
             </div>
           </div>

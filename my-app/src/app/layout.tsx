@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import {Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -20,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${interTight.variable} font-sans`}>
         {children}
       </body>
     </html>
