@@ -44,7 +44,8 @@ export default function LatestArticles() {
         {articles.map((article) => (
           <div
             key={article.id}
-            className="bg-white border rounded-xl p-4 flex justify-between gap-4 hover:shadow-sm transition"
+            className="bg-white border  rounded-xl p-4 flex justify-between gap-4 hover:shadow-sm transition"
+            style={{ borderColor: "#E5E7E8" }}
           >
             {/* Left Content */}
             <div className="flex-1">
